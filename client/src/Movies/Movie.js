@@ -5,10 +5,10 @@ const Movie = (props) => {
   const [movie, setMovie] = useState({});
  
   useEffect(() => {
-    const id = 1;
+    const id = props.match.params;
     // change ^^^ that line and grab the id from the URL
     // You will NEED to add a dependency array to this effect hook
-    
+
     function fetchMovie(id) {
        axios
         .get(`http://localhost:5000/api/movies/${id}`)
@@ -18,8 +18,8 @@ const Movie = (props) => {
         .catch(error => {
           console.error(error);
         });
-      }
-  },[]);
+      }  
+  }, [props.match.params]);
   
   // Uncomment this only when you have moved on to the stretch goals
   // const saveMovie = () => {
