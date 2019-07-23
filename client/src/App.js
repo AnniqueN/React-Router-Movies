@@ -14,8 +14,11 @@ const App = () => {
 
   return (
     <div>
-      <SavedList list={savedList} />
+      <SavedList list={savedList}/>
+    {/*<div>Replace this Div with your Routes</div> */}
 
+
+    {/* created path to home giving data from Route tag */}
       <Switch>
         <Route exact path="/" component={MovieList} />
         <Route

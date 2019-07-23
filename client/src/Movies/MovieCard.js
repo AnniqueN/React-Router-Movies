@@ -1,5 +1,5 @@
 import React from 'react';
-
+//added details from movies to movie card
 const MovieCard = ({ movie }) => {
   const { title, director, metascore, stars } = movie;
   return (

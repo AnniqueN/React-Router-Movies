@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
-
+//import movie card 
 import MovieCard from "./MovieCard";
 
 const Movie = props => {

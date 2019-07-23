@@ -20,7 +20,7 @@ const MovieList = props => {
 
     getMovies();
   }, []);
-
+//created links and keys
   return (
     <div className="movie-list">
       {movies.map(movie => {
